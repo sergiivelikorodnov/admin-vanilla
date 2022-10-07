@@ -24,7 +24,7 @@ When you save changes to any js file in the `/js` directory, the page will autom
 
 Runs **ESLint** to lint js files in the `/js` directory according to the rules and requirements for JavaScript code.
 
-## Структура проекта
+## Structure
 
 ### `css/`, `img/`
 
