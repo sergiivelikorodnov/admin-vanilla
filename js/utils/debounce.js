@@ -1,4 +1,4 @@
-function debounce (callback, timeoutDelay = 500) {
+function debounce(callback, timeoutDelay = 500) {
   let timeoutId;
 
   return (...rest) => {
@@ -7,4 +7,4 @@ function debounce (callback, timeoutDelay = 500) {
   };
 }
 
-export {debounce};
+export default debounce;

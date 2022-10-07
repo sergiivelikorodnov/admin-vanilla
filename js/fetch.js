@@ -1,5 +1,5 @@
 import { REQUEST_URL } from './constants.js';
-import { showAlert } from './utils.js';
+import showAlert from './utils.js';
 import { drawData } from './row.js';
 
 /**
@@ -20,24 +20,6 @@ function getData(method, url, body) {
 const createFetch =
   (onSuccess, onError, method, url, body = null) =>
   () => {
-    console.log('fetch');
-
-    getData(method, url, body)
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error(`${response.status} ${response.statusText}`);
-      })
-      .then(onSuccess)
-      .catch(onError);
-  };
-
-const createRefetch =
-  (onSuccess, onError, method, url, body = null) =>
-  () => {
-    console.log('fetch');
-
     getData(method, url, body)
       .then(response => {
         if (response.ok) {
@@ -76,6 +58,6 @@ const refetchData = query =>
     .then(data => {
       drawData(data);
     })
-    .catch(showAlert());
+    .catch(showAlert);
 
 export { getData, outputData, refetchData };

@@ -11,14 +11,10 @@ const showAlert = message => {
 
   document.body.append(alertContainer);
   alertContainer.classList.add('alert-message');
-  scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
 
   setTimeout(() => {
     alertContainer.remove();
   }, ALERT_SHOW_TIME);
 };
 
-export { showAlert };
+export default showAlert;

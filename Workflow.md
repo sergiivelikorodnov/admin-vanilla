@@ -1,43 +1,39 @@
-# Как работать над проектом
+# How to run work
 
-## Окружение
+## Environment
 
-Для удобства работы над проектом используются инструменты из **Node.js** и **npm**. Все необходимые настройки произведены. Всё, что от вас требуется,— это убедиться, что на рабочем компьютере установлена **Node.js**, а после в терминале перейти в директорию с проектом и _единожды_ запустить команду:
+For the working on the project, use the tools from **Node.js** and **npm**. All necessary modifications have been made. All that is required of you is that **Node.js** is installed on your working computer, and after in the terminal go to the directory with the project and _once_ application:
 
 ```bash
-npm install
+npm i
 ```
 
-Данная команда запустит процесс установки зависимостей проекта из **npm**.
+This command will start the process of installing project dependencies from **npm**.
 
-После успешной установки зависимостей вы сможете использовать инструменты для разработки, вроде **ESLint** и **Browsersync**, которые идут с проектом. Для этого в файле `package.json` предусмотрены следующие сценарии...
+Once the dependencies are successfully installed, you will be able to use the development tools like **ESLint** and **Browsersync** that come with the project. To do this, the following scripts are provided in the `package.json` file...
 
-### `npm run start`
+### `npm start`
 
-Запускает локальный сервер с помощью **Browsersync**. После запуска сайт будет доступен для просмотра в браузере по адресу `http://localhost:3001`.
+Starts a local server using **Browsersync**. Once launched, the site will be viewable in a browser at `http://localhost:3001`.
 
-При сохранении изменений в любом js-файле в директории `/js` страница автоматически перезагрузится в браузере. Таким образом, вы можете следить за разработкой проекта в режиме реального времени.
+When you save changes to any js file in the `/js` directory, the page will automatically reload in the browser. Thus, you can follow the development of the project in real time.
 
-> Обратите внимание, после запуска **Browsersync** продолжит работу, пока вы самостоятельно не остановите его, нажав в терминале сочетание клавиш `Ctrl` + `C`.
+> Please note that after starting **Browsersync** will continue to work until you stop it yourself by pressing the `Ctrl` + `C` key combination in the terminal.
 
 ### `npm run test`
 
-Запускает **ESLint** для линтинга js-файлов в директории `/js` по правилам и требованиям к JavaScript-коду, принятым в Академии.
+Runs **ESLint** to lint js files in the `/js` directory according to the rules and requirements for JavaScript code.
 
 ## Структура проекта
 
-### `css/`, `fonts/`, `img/`
+### `css/`, `img/`
 
-Директории со статическими файлами проекта: стилями, изображениями, шрифтами и т.д.
+Directories with static project files: styles, images, etc.
 
 ### `js/`
 
-Ваша главная рабочая директория, в которой будут храниться все скрипты проекта.
+Directories with js files.
 
 ### `index.html`
 
-Главная страница проекта.
-
-### Остальное
-
-Все остальные файлы в проекте являются служебными. Пожалуйста, не удаляйте и не изменяйте их самовольно. Только если того требует задание или наставник.
+Main page.

@@ -11,14 +11,18 @@
   "plugins": [
     "prettier"
   ],
+  "settings": {
+    "import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"]
+  },
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true
     },
     "sourceType": "module"
   },
   "rules": {
+    "import/extensions": [0, { "js": "always" }],
     "prettier/prettier": "error",
     "object-curly-newline": [
       "error",
