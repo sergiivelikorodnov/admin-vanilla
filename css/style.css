@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  color: #353535;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-left: 115px;
+    padding-right: 115px;
+    max-width: 1230px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+    max-width: 1440px;
+  }
+}
+
+.main-header {
+  background-color: #259bc1;
+  height: 50px;
+  display: flex;
+  width: 100%;
+}
+
+.main-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation, .site-navigation {
+  display: flex;
+  align-items: baseline;
+}
+
+.site-navigation {
+  padding-right: 9px
+}
+
+.main-header-logo p {
+  color: #055e92;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+
+.site-navigation-filter{
+  text-transform: uppercase;
+  color: #80c4da;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+.site-navigation-item{
+  color: #80c4da;
+  padding: 10px;
+  font-size: 11px;
+}
+
+.site-navigation-item--active{
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-position: center;
+
+}
+
+.search_bar{
+  width: 100%;
+  height: 67px;
+  background-color: #f8f8f8;
+  display: flex;
+}
+
+.search_bar-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_bar__label{
+  display: none;
+}
+
+.search_bar__element{
+  position: relative;
+}
+
+.search_bar__element input{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 233px;
+  height: 35px;
+  border: 1px #c4c4c4 solid;
+  border-radius: 5px;
+  padding-left: 32px;
+}
+
+
+.search_bar__element input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 2px 2px #8dc63f;
+  box-shadow: 0 0 2px 2px #8dc63f;
+  border: 1px #8dc63f solid;
+}
+
+.search_bar__element::before {
+  width: 14px;
+  height: 17px;
+  content: "";
+  display: block;
+  background-image: url("../img/search.png");
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.add_new_account_button{
+  background-color: #8dc63f;
+  border: 1px #8dc63f solid;
+  border-radius: 5px;
+  padding: 7px 16px 7px 16px;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 475px) {
+  .search_bar__element{
+    width: 100%;
+  }
+
+  .search_bar__element input{
+    width: 100%;
+  }
+
+  .add_new_account_button{
+    width: 100%;
+  }
+
+  .search_bar-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search_bar {
+    height: 100%;
+    padding: 10px 0 10px 0;
+  }
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+  padding: 25px 15px 15px 15px;
+}
+
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid #F2F8F8;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: normal;
+  font-size: 11px;
+  padding: 10px;
+}
+
+.table td {
+	padding: 5px;
+	border: none;
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: normal;
+  font-size: 11px;
+  padding: 15px 10px;
+}
+
+.table td:first-child{
+  width: 10%;
+  font-size: 12px;
+}
+
+.table td:nth-child(2){
+  color: #000;
+  width: 22%;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .table td:nth-child(2){
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .table td:nth-child(2){
+    width: 40%;
+  }
+}
+
+.table tr{
+  border-bottom: 1px solid #F2F8F8;
+}
+
+.alert-message{
+  z-index: 100;
+  position:absolute;
+  left: 0;
+  top : 0;
+  right : 0;
+  padding : 10px 3px;
+  font-size: 24px;
+  text-align: center;
+  color : white;
+  background-color: red;
+}
+

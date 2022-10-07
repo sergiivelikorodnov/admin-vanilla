@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": 12401,
+            "name": "ACME Corporation",
+            "email": "tom.hudges@apple.com"
+        },
+        {
+            "id": 12402,
+            "name": "intera d.o.o.",
+            "email": "the.boss@intera.si"
+        },
+        {
+            "id": 12403,
+            "name": "Databox",
+            "email": "admin@databox.com"
+        },
+        {
+            "id": 12404,
+            "name": "13/37",
+            "email": "info@1337.com"
+        }
+    ]
+}

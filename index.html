@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Platform admin</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="wrapper main-header-container">
+      <a class="main-header-logo">
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="19" height="17" alt="Platform admin">
+        <p>Platform admin</p>
+      </a>
+      <!--================ Navigation ================-->
+      <nav class="main-navigation">
+        <p class="site-navigation-filter">Filter:</p>
+        <ul class="site-navigation list-reset">
+          <li>
+            <a href="#" class="site-navigation-item site-navigation-item--active">All</a>
+          </li>
+          <li>
+            <a href="#" class="site-navigation-item">Free</a>
+          </li>
+          <li>
+            <a href="#" class="site-navigation-item">Paying</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!--================ Main content ================-->
+  <main>
+    <div class="search_bar">
+      <div class="wrapper search_bar-container">
+        <fieldset class="search_bar__element">
+          <label class="search_bar__label" for="search">Search</label>
+          <input id="search" name="search" type="text" placeholder="Search">
+        </fieldset>
+        <button class="add_new_account_button" type="button">Create new Account</button>
+      </div>
+    </div>
+    <div class="table">
+      <div class="wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Company Name</th>
+              <th>Owner email</th>
+            </tr>
+          </thead>
+          <tbody id="row">
+            <tr id="company">
+              <td class="company_id"></td>
+              <td class="company_name"></td>
+              <td class="company_email"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/utils/debounce.js"></script>
+</body>
+
+</html>
